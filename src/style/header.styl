@@ -1,14 +1,12 @@
 header
 	background: #dcdcdc;
-	color #767676
 	.header
-		min-height: 230px;
-
+		max-height: 230px;
+		height: 100%;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		.header__company
-
 			display flex
 			flex-direction row
 			.logo
@@ -21,8 +19,9 @@ header
 				justify-content center
 				padding: 0 10px
 				.name
-					font-size 170%
-					font-weight bold
+					font-size: 190%;
+					font-weight: 700;
+					line-height: 80%;
 				.slogan
 					font-size: 90%;
 					line-height: 250%;
@@ -32,12 +31,12 @@ header
 			flex-direction column
 			align-items flex-end
 			.tel
-				font-size 200%
-				font-weight lighter
+				font-family: 'Open Sans Condensed';
+				font-size: 270%;
+				font-weight 300
 			.feedback
-				font-weight: bold;
-				font-size: 135%;
-				margin-top: 20px;
+				font-weight: 700;
+				font-size: 155%;
 				border-bottom: 2px dashed #797979;
 
 	.header__nav
@@ -48,6 +47,7 @@ header
 			list-style: none;
 			display: flex;
 			justify-content: space-around;
+			align-items: center;
 			li
 				color: #FFF;
 				font-size 170%
@@ -57,6 +57,7 @@ header
 				text-align: center;
 				&.devider {
 					width 2px;
+					height: 30px;
 					background #FFF
 					margin: 0 -35px;
 				}

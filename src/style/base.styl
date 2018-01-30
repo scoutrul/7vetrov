@@ -1,5 +1,9 @@
 @import 'normalize'
 
+a {
+	cursor pointer
+}
+
 body
 	display: flex;
 	flex-direction: column;
@@ -9,6 +13,10 @@ body
 	margin 0
 	padding 0;
 	font-size 16px
+	font-weight 400
+	font-family: 'PT Sans', sans-serif;
+	color #767676
+
 section
 	width: 100%;
 	display: flex;
@@ -17,12 +25,16 @@ section
 .container
 	width: 100%;
 	max-width: 980px;
-	margin: auto;
+	min-width 240px
+	margin: 0 auto;
 	padding: 0;
 	flex: 1 0 0;
 
-footer
-	display: flex;
+main
+	display flex
 
 @import 'header.styl'
 @import 'slider.styl'
+@import 'bread.styl'
+@import 'sidebar.styl'
+@import 'footer.styl'

@@ -1,9 +1,13 @@
 {
-  "presets": [[
-    "env", {
-      "targets": {
-        "node": "current"
-      }
-    }
-  ]]
+    "presets": [
+        'es2016',
+        [
+            "env",
+            {
+                "targets": {
+                    "node": "current"
+                }
+            }
+        ]
+    ]
 }

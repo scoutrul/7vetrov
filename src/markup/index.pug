@@ -1,51 +1,78 @@
 extends layout-blocks/layout
 block container
-        section
-            .slider
-                .container slider
-            .container
-                    ul.bread
-                        li
-                            a Главная
-                        li
-                            a Каталог
-                        li
-                            span Бытовая техника
-        section
-            .siderbar
+
+    .slider
+        .container slider
+
+    .container
+        ul.bread
+            li
+                a Главная
+            li.devider /
+            li
+                a Каталог
+            li.devider /
+            li
+                span Бытовая техника
+
+    .container
+        main
+            .sidebar
                 .menu
+                    ul.sidebar__menu
+                        a Автомобили
+                        li some
+                    ul.sidebar__menu.sidebar__menu-active
+                        a Бытовая техника
+                        li.active Микроволновки
+                        li Холодильники
+                        li Посудомоечные машины
+                        li Чайники
+                    ul.sidebar__menu
+                        a Мобильная техника
+                        li some
+                    ul.sidebar__menu
+                        a Компьютеры
+                        li some
+                    ul.sidebar__menu
+                        a Одежда
+                        li some
+                    ul.sidebar__menu
+                        a Недвижимостю
+                        li some
                 .block
                     .block_price
-                        div img
-                        div Прайс-лист
-            main.container
-                .catalog
-                    .catalog__grid
-                        .product
-                            .picture img
-                            .description Самый клевый чайник, который надо купить!
-                            .buy
-                                .price 1 900 р.
-                                .cart img
-                        .product
-                            .picture img
-                            .description Самый клевый чайник, который надо купить!
-                            .buy
-                                .price 1 900 р.
-                                .cart img
-                        .product
-                            .picture img
-                            .description Самый клевый чайник, который надо купить!
-                            .buy
-                                .price 1 900 р.
-                                .cart img
-                        .product
-                            .picture img
-                            .description Самый клевый чайник, который надо купить!
-                            .buy
-                                .price 1 900 р.
-                                .cart img
-                    .catalog__nav 1 2 3 4 5 6 7
+                        a
+                            div.img Excel
+                            div Прайс-лист
+            .catalog
+                .catalog__grid
+                    .product
+                        .picture 123
+                        .description Самый клевый чайник, который надо купить!
+                        .buy
+                            .price 1 900 р.
+                            .cart img
+                    .product
+                        .picture img
+                        .description Самый клевый чайник, который надо купить!
+                        .buy
+                            .price 1 900 р.
+                            .cart img
+                    .product
+                        .picture img
+                        .description Самый клевый чайник, который надо купить!
+                        .buy
+                            .price 1 900 р.
+                            .cart img
+                    .product
+                        .picture img
+                        .description Самый клевый чайник, который надо купить!
+                        .buy
+                            .price 1 900 р.
+                            .cart img
+                .catalog__nav 1 2 3 4 5 6 7
                 .info
                     div Компания «Компания» существует более 6 лет, за это время мы принимали участие в разработке более чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив состоит из более чем 20 сотрудников работающих в Москве.
                     div Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.
+

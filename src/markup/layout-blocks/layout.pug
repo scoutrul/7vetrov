@@ -6,9 +6,10 @@ html(lang="en-us")
         meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1.0")
         meta(name="description", content= description)
         link(rel="stylesheet", href=`css/${styleName}.css`)
+        link(href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|PT+Sans:400,700", rel="stylesheet")
     body
         include header
         block container
         include footer
 
-        //script(src=`js/${scriptName}.js`)
+        script(src=`js/${scriptName}.js`)

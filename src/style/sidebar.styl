@@ -1,0 +1,40 @@
+.sidebar
+	min-width: 200px;
+	.menu
+		ul
+			margin: 0
+			padding: 0
+			font-size 115%
+			line-height: 160%;
+			li
+				margin-left 25px
+				padding: 0
+				visibility hidden
+				height: 0;
+				font-size 80%
+				line-height 160%
+			&.sidebar__menu-active
+				margin-bottom 5px
+				a
+					text-decoration underline
+				li
+					visibility visible
+					height: auto
+					&.active
+						font-weight bold
+					&:hover
+						cursor pointer
+						text-decoration underline
+	.block
+		margin: 50px auto;
+		.block_price
+			text-align center
+			font-size: 32px;
+			font-weight: 600;
+			color #444
+
+			.img
+				border: 9px solid #000;
+				height: 80px;
+				width: 80px;
+				margin: auto;
