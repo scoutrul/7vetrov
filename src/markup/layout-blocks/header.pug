@@ -1,18 +1,27 @@
 header
-    section
-        .header
-            .header__company
-                .logo logotype
-                .name Название компании
+    .container.header
+        .header__company
+            .logo logotype
+            .info
+                .name Название <br/> компании
                 .slogan Самая клевая компания
-            .header__contacts
-                .tel +7(499) 777-77-77
-                .tel +7(499) 777-77-77
-                .feedback Обратная связь
-    nav
-        ul.menu
-            li Главная
-            li Каталог
-            li Доставка и оплата
-            li Прайс-лист
-            li Контакты
+        .header__contacts
+            .tel +7(499) 777-77-77
+            .tel +7(499) 777-77-77
+            .feedback Обратная связь
+    section.header__nav
+        ul.menu.container
+            li
+                a Главная
+            li.devider
+            li
+                a Каталог
+            li.devider
+            li
+                a Доставка и оплата
+            li.devider
+            li
+                a Прайс-лист
+            li.devider
+            li
+                a Контакты
