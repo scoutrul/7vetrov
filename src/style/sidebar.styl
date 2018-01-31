@@ -1,11 +1,13 @@
 .sidebar
 	min-width: 200px;
 	.menu
+		margin-top: 10px;
 		ul
 			margin: 0
 			padding: 0
 			font-size 115%
-			line-height: 160%;
+			line-height: 0;
+			min-height: 30px;
 			li
 				margin-left 25px
 				padding: 0
@@ -13,25 +15,36 @@
 				height: 0;
 				font-size 75%
 				line-height 160%
+				transition .2s ease
+				opacity 0
+
 			&.sidebar__menu-active
-				margin-bottom 5px
+				margin-bottom 20px
+
 				a
 					text-decoration underline
 				li
-					visibility visible
-					height: auto
+					visibility: visible;
+					height: 18px;
+					opacity: 1;
+					margin-top: 4px;
 					&.active
 						font-weight bold
 					&:hover
 						cursor pointer
 						text-decoration underline
 	.block
-		margin: 50px auto;
+		margin: 88px auto;
+		text-align: center;
+		display: flex;
+		justify-content: center;
 		.block_price
-			text-align center
-			font-size: 32px;
+			font-size: 31px;
 			font-weight: 600;
-			color #444
+			color: #444;
+			line-height: 190%;
+			width: 100%;
+			padding-right: 20px;
 
 			.img
 				border: 9px solid #000;

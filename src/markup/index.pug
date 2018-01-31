@@ -2,7 +2,11 @@ extends layout-blocks/layout
 block container
 
     .slider
-        .container slider
+        .container
+            .left
+                .arrow <
+            .right
+                .arrow >
 
     .container
         ul.bread
@@ -77,7 +81,14 @@ block container
                         .buy
                             .price 1 900 р.
                             .cart cart
-                .catalog__nav 1 2 3 4 5 6 7
+                .catalog__nav
+                    a 1
+                    a 2
+                    a.active 3
+                    a 4
+                    a 5
+                    a 6
+                    a 7
                 .devider &nbsp;
 
                 .info

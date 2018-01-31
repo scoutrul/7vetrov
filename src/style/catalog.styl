@@ -1,7 +1,9 @@
 .catalog
+	overflow: hidden;
 	.catalog__grid
 		display flex
 		flex-flow row wrap
+		width: calc(100% + 20px);
 		.product
 			width: 100%;
 			max-width: 250px;
@@ -15,18 +17,29 @@
 				height 210px
 				background #FFF
 			.desc
-				margin 15px 0
+				margin 17px 0
+				font-size: 117%;
+				line-height: 110%;
 			.buy
 				display: flex;
 				justify-content: space-between;
-				margin: 50px 0 0;
+				margin: 48px 0 0;
 				font-size: 170%;
+				word-spacing: 0.1em;
 	.catalog__nav
 		display: flex;
 		justify-content: center;
 		line-height: 40px;
+		a
+			display inline-block
+			margin 0 4px
+			padding 0 6px
+			&.active
+				cursor default
+				font-size 120%
+
 	.devider
-		margin-top: 53px;
+		margin-top: 54px;
 		margin-bottom: 25px;
 		height: 1px;
 		background-color: black;
@@ -38,4 +51,4 @@
 		justify-content: space-between;
 		div
 			max-width: 350px;
-			padding-right: 50px;
+			padding-right: 20px;
