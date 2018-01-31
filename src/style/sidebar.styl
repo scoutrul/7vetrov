@@ -1,5 +1,10 @@
 .sidebar
 	min-width: 200px;
+	@media Medium
+		margin: 0 -90px;
+		transform: translateX(-100px);
+	@media Small
+		display none
 	.menu
 		margin-top: 10px;
 		ul
@@ -45,9 +50,5 @@
 			line-height: 190%;
 			width: 100%;
 			padding-right: 20px;
-
 			.img
-				border: 9px solid #000;
-				height: 80px;
-				width: 80px;
-				margin: auto;
+				margin-bottom: -10px;

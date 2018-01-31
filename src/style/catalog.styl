@@ -4,6 +4,12 @@
 		display flex
 		flex-flow row wrap
 		width: calc(100% + 20px);
+		@media Small
+			justify-content center
+			width 100%
+		@media Medium
+			justify-content center
+
 		.product
 			width: 100%;
 			max-width: 250px;
@@ -16,6 +22,7 @@
 				width 210px
 				height 210px
 				background #FFF
+				background-image url('/images/placeholder.png')
 			.desc
 				margin 17px 0
 				font-size: 117%;
@@ -26,6 +33,11 @@
 				margin: 48px 0 0;
 				font-size: 170%;
 				word-spacing: 0.1em;
+				.cart
+					display: flex;
+					align-items: flex-end;
+					width: 40px;
+					height: 30px;
 	.catalog__nav
 		display: flex;
 		justify-content: center;
@@ -49,6 +61,12 @@
 		display: flex;
 		font-size: 92%;
 		justify-content: space-between;
+		flex-flow: wrap;
 		div
+			@media Small
+				max-width 100%
 			max-width: 350px;
-			padding-right: 20px;
+			padding: 0 20px 20px 0;
+			@media Medium
+				max-width: 550px;
+				margin: auto;

@@ -1,6 +1,9 @@
 .slider
 	min-height 400px
 	background #f8f8f8
+	background-image url('/images/slide.png')
+	background-repeat: no-repeat;
+	background-position: 50% 0;
 	.container
 		position relative
 	.left, .right
@@ -10,5 +13,13 @@
 			height 60px
 			width 35px
 			background #d1d1d1
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 50px;
+			outline: 10px solid #d1d1d1;
+			outline-offset: -10px;
+	.left
+		left 20px
 	.right
-		right 27px
+		right 20px

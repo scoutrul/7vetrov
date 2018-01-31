@@ -16,6 +16,7 @@ body
 	font-weight 400
 	font-family: 'PT Sans', sans-serif;
 	color #767676
+	overflow-x: hidden;
 
 section
 	width: 100%;
@@ -27,14 +28,17 @@ section
 	max-width: 980px;
 	min-width 240px
 	margin: 0 auto;
-	padding: 0;
 	flex: 1 0 0;
+	padding: 0 10px;
+	box-sizing: content-box;
+
 
 main
 	display flex
 	margin-bottom: 175px;
 
 @import 'header.styl'
+@import 'header__nav.styl'
 @import 'slider.styl'
 @import 'bread.styl'
 @import 'sidebar.styl'
